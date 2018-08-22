@@ -1,0 +1,21 @@
+<!doctype html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-hid="charset" data-n-head="true" charset="utf-8"><meta data-hid="http-equiv" data-n-head="true" content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta data-hid="renderer" data-n-head="true" content="webkit" renderer="X-UA-Compatible"><meta data-hid="viewport" data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-hid="description" data-n-head="true" content="我的钢铁网提供最新最全的价格行情" name="description"><meta data-hid="keywords" data-n-head="true" content="价格行情" name="keywords"><title data-n-head="true">About page</title><base href="/test/vuedemo/"><link href="https://a.mysteelcdn.com/test/vuedemo/manifest.f733f1fd23ccc49a0758.js" rel="preload" as="script"><link href="https://a.mysteelcdn.com/test/vuedemo/vendor.e29ef56eaafe13b21865.js" rel="preload" as="script"><link href="https://a.mysteelcdn.com/test/vuedemo/app.b7a7231005d54ec28f31.js" rel="preload" as="script"><link href="https://a.mysteelcdn.com/test/vuedemo/layouts_default.638c010b092ace57306f.js" rel="preload" as="script"><link href="https://a.mysteelcdn.com/test/vuedemo/pages_pages.5b8a83ef3f3c3474cdf2.js" rel="preload" as="script"><link href="https://a.mysteelcdn.com/test/vuedemo/pages_list_index.e92519af3ce3b98aa32f.js" rel="prefetch"><link href="https://a.mysteelcdn.com/test/vuedemo/pages_index.b380fdf7ccc350010ce2.js" rel="prefetch"><style data-vue-ssr-id="633a4e38:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style><style data-vue-ssr-id="7195998f:0">html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-box-sizing:border-box;box-sizing:border-box}.button--green{display:inline-block;border-radius:4px;border:1px solid #3b8070;color:#3b8070;text-decoration:none;padding:10px 30px}.button--green:hover{color:#fff;background-color:#3b8070}.button--grey{display:inline-block;border-radius:4px;border:1px solid #35495e;color:#35495e;text-decoration:none;padding:10px 30px;margin-left:15px}.button--grey:hover{color:#fff;background-color:#35495e}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div><div class="news-item"><ul class="newsList">
+        #set($articles = '')
+        #set($articles = $!{articleTool.list(4935,'','',0,0,0,'',true,0,7)})
+        #foreach($article in $articles)
+        <li>
+            #if($article.currentYear=='0')
+            <span>[$!{article.time6}]</span><a href="$!{article.url}" target="_blank" title="$!{article.title}">$!{article.title}</a>
+            #else
+            <span>[$!{article.time6}]</span><a href="$!{article.url}" target="_blank" title="$!{article.title}" style="width:200px">$!{article.title}</a>
+            #end
+        </li>
+        #end
+    </ul><div class="moreDiv"><a href="http://news.mysteel.com/article/p-4935-------------1.html" target="_blank" class="more">更多></a></div></div></div></div></div><script type="text/javascript">window.__NUXT__={layout:"default",data:[{name:"static"}],error:null,serverRendered:!0}</script><script defer src="https://a.mysteelcdn.com/test/vuedemo/manifest.f733f1fd23ccc49a0758.js"></script><script defer src="https://a.mysteelcdn.com/test/vuedemo/layouts_default.638c010b092ace57306f.js"></script><script defer src="https://a.mysteelcdn.com/test/vuedemo/pages_pages.5b8a83ef3f3c3474cdf2.js"></script><script defer src="https://a.mysteelcdn.com/test/vuedemo/vendor.e29ef56eaafe13b21865.js"></script><script defer src="https://a.mysteelcdn.com/test/vuedemo/app.b7a7231005d54ec28f31.js"></script>
+  
+
